@@ -95,7 +95,106 @@ intents:
 - nlu_fallback
 - out_of_scope
 - out_of_scope_non_english
+- ask_boyshostel
+- ask_girlshostel
+- ask_classrooms
+- ask_electricalstation
+- ask_firerig
+- ask_firetraining
+- ask_hubble
+- ask_hubblelift
+- ask_printer
+- ask_pump
+- ask_rainharvesting
+- ask_safetyzone
+- ask_sewageplant
+- ask_solartree
+- ask_sportsarena
 responses:
+  utter_boyshostel:
+  - text: https://goo.gl/maps/izcenMLXNgMR5XFF8
+  utter_boyshostelpic:
+  - text: You can reach to boys hostel with the help of Google Map by just clicking at
+    image: https://i.imgur.com/2Wuhwti.jpg
+  utter_girlshostel:
+  - text: https://goo.gl/maps/xN3Ky2siqJ25UptC8
+  utter_girlshostelpic:
+  - text: You can reach to girls hostel with the help of Google Map by just clicking at
+    image: https://i.imgur.com/Aq2hue5.jpg
+  utter_classrooms:
+  - text: https://goo.gl/maps/Ze1wPRzmto63SDAP9
+  utter_classroomspic:
+  - text: UPES having smart classrooms. You can visit with the help of Google Map by just clicking at
+    image: https://i.imgur.com/KmixLre.jpg
+  utter_dsw:
+  - text: https://goo.gl/maps/Wt43ToUAWX2TV5eQ6
+  utter_dswpic:
+  - text: You can reach to student welfare office with the help of Google Map by just clicking at
+    image: https://i.imgur.com/5ojYzJW.jpg
+  utter_electricalstation:
+  - text: https://goo.gl/maps/GZEVJ1EVBasn2ghe9
+  utter_electricalstationpic:
+  - text: You can reach to electrical sub-station with the help of Google Map by just clicking at
+    image: https://i.imgur.com/MpxJbpv.jpg
+  utter_firerig:
+  - text: https://goo.gl/maps/ymsQWQUNo3jb83eQ8
+  utter_firerigpic:
+  - text: You can reach to fire RIG zone with the help of Google Map by just clicking at
+    image: https://i.imgur.com/5YlTdkh.jpg
+  utter_firetraining:
+  - text: https://goo.gl/maps/sTZUvEeWFLYWL5uG9
+  utter_firetrainingpic:
+  - text: You can reach to fire training ground with the help of Google Map by just clicking at
+    image: https://i.imgur.com/8kz0jxV.jpg
+  utter_hubble:
+  - text: https://goo.gl/maps/rKsjqSL3uCDfyJEF6
+  utter_hubblepic:
+  - text: You can reach to hubble block with the help of Google Map by just clicking at
+    image: https://i.imgur.com/yVuaWgQ.jpg
+  utter_hubblelift:
+  - text: https://goo.gl/maps/TWgMxuZ4TDbdVVDp6
+  utter_hubbleliftpic:
+  - text: You can reach to lift in hubble block with the help of Google Map by just clicking at
+    image: https://i.imgur.com/sZQ87fA.jpg  
+  utter_printer:
+  - text: https://goo.gl/maps/2kVEudYNaFP7QVrc9
+  utter_printerpic:
+  - text: You can reach to centeralized printer with the help of Google Map by just clicking at
+    image: https://i.imgur.com/5Nc3uru.jpg   
+  utter_pump:
+  - text: https://goo.gl/maps/tm26XZPfnHuM8LMK6
+  utter_pumppic:
+  - text: You can reach to pump with the help of Google Map by just clicking at
+    image: https://i.imgur.com/0QfNpZs.jpg
+  utter_rainharvesting:
+  - text: https://goo.gl/maps/jr33khcFM7Jyzid6A
+  utter_rainharvestingpic:
+  - text: There are multiple rain harvesting areas. You can visit some with the help of Google Map by just clicking at
+    image: https://i.imgur.com/uY1vILc.jpg
+  utter_safetyzone:
+  - text: https://goo.gl/maps/XoMdW5pDXZ2iaKYY7
+  utter_safetyzonepic:
+  - text: You can see the various safety zones mentioned in the image or You can visit safety zone board help of Google Map by just clicking at
+    image: https://i.imgur.com/QOZFa4L.jpg
+  utter_sewageplant:
+  - text: https://goo.gl/maps/PC9EYVCLvBWk5zJs8
+  utter_sewageplantpic:
+  - text: You can reach to sewage plant with the help of Google Map by just clicking at
+    image: https://i.imgur.com/y1ZMb95.jpg
+  utter_solartree:
+  - text: https://goo.gl/maps/xzY6Ju3wM7df4Cn96
+  utter_solartreepic:
+  - text: You can reach to solar tree with the help of Google Map by just clicking at
+    image: https://i.imgur.com/4Qrlpq9.jpg
+  utter_sportsarena:
+  - text: https://goo.gl/maps/83oXJtuGaewfrRex6
+  utter_sportsarenapic:
+  - text: You can reach to sports arena with the help of Google Map by just clicking at
+    image: https://i.imgur.com/jxRVEc0.jpg
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that.
+  utter_default:
+  - text: I'm sorry, I can't help you.
   utter_greet:
   - text: Welcome to the HelpDesk. Kindly type your query here.
   utter_id:
@@ -173,10 +272,6 @@ responses:
     image: https://i.imgur.com/t2HHDQx.jpg
   utter_foodcourt:
   - text: https://www.google.com/maps/dir//30.4159679,77.9677752/@30.4159679,77.9655865,17z/data=!4m2!4m1!3e0?hl=en
-  utter_dswpic:
-  - text: You can reach to DSW office with the help of Google Map by just clicking at
-  utter_dsw:
-  - text: https://www.google.com/maps/dir//30.4163275,77.9672438/@30.4163275,77.9650551,17z/data=!4m2!4m1!3e0?hl=en
   utter_infirmarypic:
   - text: You can reach to Infirmary with the help of Google Map by just clicking at
   utter_infirmary:
@@ -435,7 +530,7 @@ actions:
 - utter_greetnew
 - utter_registersupple
 - utter_howbuilt
-- action_default_fallback
+#- action_default_fallback
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

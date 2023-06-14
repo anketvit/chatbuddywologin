@@ -41,10 +41,10 @@ app:
   tag: server-v35
 
   # -- Override default registry + image.name for Action Server
-  repository: "anketvit/rasa-test"
+  #repository: "anketvit/rasa-test"
 
   # -- Action Server image pullPolicy
-  pullPolicy: IfNotPresent
+  #pullPolicy: IfNotPresent
 
   # -- Action Server repository pullSecret
   ## See https://kubernetes.io/docs/concepts/containers/images/#specifying-imagepullsecrets-on-a-pod

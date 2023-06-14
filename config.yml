@@ -20,7 +20,7 @@ pipeline:
 - name: ResponseSelector
   epochs: 100
 - name: FallbackClassifier
-  threshold: 0.4
+  threshold: 0.7
   ambiguity_threshold: 0.1
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
@@ -36,6 +36,6 @@ policies:
   - 32
   - 64
 - name: RulePolicy
-  core_fallback_threshold: 0.15
+  core_fallback_threshold: 0.4
   core_fallback_action_name: "action_default_fallback"
 assistant_id: 20230511-162728-worn-cilantro

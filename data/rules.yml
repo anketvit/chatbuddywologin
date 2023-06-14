@@ -458,8 +458,100 @@ rules:
   - intent: ask_movies   
   - action: utter_movies
 
+- rule: asking for boyshostel rule
+  steps:
+  - intent: ask_boyshostel 
+  - action: utter_boyshostelpic
+  - action: utter_boyshostel
+  
+- rule: asking for girlshostel rule
+  steps:
+  - intent: ask_girlshostel  
+  - action: utter_girlshostelpic
+  - action: utter_girlshostel
+  
+- rule: asking for classrooms rule
+  steps:
+  - intent: ask_classrooms
+  - action: utter_classroomspic
+  - action: utter_classrooms
+  
+- rule: asking for electricalstation rule
+  steps:
+  - intent: ask_electricalstation   
+  - action: utter_electricalstationpic
+  - action: utter_electricalstation
+   
+- rule: asking for firerig rule
+  steps:
+  - intent: ask_firerig  
+  - action: utter_firerigpic
+  - action: utter_firerig
+   
+- rule: asking for firetraining rule
+  steps:
+  - intent: ask_firetraining  
+  - action: utter_firetrainingpic
+  - action: utter_firetraining
+  
+- rule: asking for hubble rule
+  steps:
+  - intent: ask_hubble   
+  - action: utter_hubblepic
+  - action: utter_hubble
+
+- rule: asking for hubblelift rule
+  steps:
+  - intent: ask_hubblelift   
+  - action: utter_hubbleliftpic
+  - action: utter_hubblelift
+   
+- rule: asking for printer rule
+  steps:
+  - intent: ask_printer   
+  - action: utter_printerpic
+  - action: utter_printer
+  
+- rule: asking for pump rule
+  steps:
+  - intent: ask_pump   
+  - action: utter_pumppic
+  - action: utter_pump
+  
+- rule: asking for rainharvesting rule
+  steps:
+  - intent: ask_rainharvesting   
+  - action: utter_rainharvestingpic
+  - action: utter_rainharvesting
+  
+  
+- rule: asking for safetyzone rule
+  steps:
+  - intent: ask_safetyzone   
+  - action: utter_safetyzonepic
+  - action: utter_safetyzone
+  
+- rule: asking for sewageplant rule
+  steps:
+  - intent: ask_sewageplant   
+  - action: utter_sewageplantpic
+  - action: utter_sewageplant
+  
+- rule: asking for solartree rule
+  steps:
+  - intent: ask_solartree   
+  - action: utter_solartreepic
+  - action: utter_solartree
+  
+- rule: asking for sportsarena rule
+  steps:
+  - intent: ask_sportsarena   
+  - action: utter_sportsarenapic
+  - action: utter_sportsarena
+
 - rule: nlu fallback rule
   steps:
   - intent: nlu_fallback
-  - action: action_default_fallback
+  - action: utter_please_rephrase
+#  - action: action_default_fallback
 

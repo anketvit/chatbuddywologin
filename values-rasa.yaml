@@ -47,9 +47,13 @@ applicationSettings:
     additionalChannelCredentials:
       rest: {}
       telegram:
-        access_token: "5863770404:AAFcTkAU_F9-CDDNTaq7a92S1VblRYonWPo"
-        verify: "upes_helpdesk_bot"
-        webhook_url: "https://g9rxydu3.ngrok.app/webhooks/telegram/webhook"
+        access_token: "5633459358:AAHhpSZoG0c2_cR4DjloMUg3SAOHgWFP6Ew"
+        verify: "upes_bot"
+        webhook_url: "https://d351-103-182-161-2.eu.ngrok.io/webhooks/telegram/webhook"
+      #telegram:
+      #  access_token: "5863770404:AAFcTkAU_F9-CDDNTaq7a92S1VblRYonWPo"
+      #  verify: "upes_helpdesk_bot"
+      #  webhook_url: "https://g9rxydu3.ngrok.app/webhooks/telegram/webhook"
 
   telemetry:
     # -- Enable telemetry
@@ -167,7 +171,7 @@ applicationSettings:
 
     action:
       # -- the URL which Rasa Open Source calls to execute custom actions
-      endpointURL: "http://app:5055/webhook"
+      endpointURL: /webhook
 
     # -- Additional endpoints
     additionalEndpoints: {}
@@ -187,7 +191,7 @@ applicationSettings:
     useConfigEndpoint: false
 
 # -- Specify the number of Rasa Open Source replicas
-replicaCount: 3
+replicaCount: 1
 
 networkPolicy:
   # -- Enable Kubernetes Network Policy
@@ -667,7 +671,8 @@ rasa-action-server:
     # -- Determine if external URL is used
     enabled: true
     # -- URL to Rasa Action Server
-    url: "http://app:5055/webhook"
+    #url: ""
+    url: "http://rasa-action-server/webhook"
 
 ## Settings for Duckling
 ## See: https://github.com/RasaHQ/helm-charts/tree/main/charts/duckling

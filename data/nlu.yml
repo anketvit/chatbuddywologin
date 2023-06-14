@@ -449,17 +449,6 @@ nlu:
     - authority letter format for degree collection
     - can i give authority to other person to collect my degree, what is format for authority letter
     - can i authorize someone to collect my degree if so what is authority letter format
-- intent: ask_dsw
-  examples: |
-    - how to reach dsw office
-    - how to reach dean student welfare
-    - where is DSW office
-    - location of dsw office in university
-    - location of dean student welfare office in campus
-    - direct me to dsw office
-    - help me to reach dsw office
-    - dsw location
-    - dsw location on google map
 - intent: ask_foodcourt
   examples: |
     - how to reach food court
@@ -2119,11 +2108,152 @@ nlu:
     - showing back on grade card
     - fail on grade card but pass
     - why showing back on grade card but pass the subject
-- intent: nlu_fallback
+- intent: ask_boyshostel
   examples: |
-    - faculty information
-    - head of the department
-    - vice chancellor name
-    - ankit.kumar@ddn.upes.ac.in
-    - gym application
-    - i forget my login credentials
+    - how to reach boys hostel?
+    - where is boys hostel in upes?
+    - boys hostel in upes
+    - location of boys hostel in upes
+    - location of boys hostel
+    - boys hostel location
+    - boys hostel
+- intent: ask_girlshostel
+  examples: |
+    - how to reach girls hostel?
+    - where is girls hostel in upes?
+    - girls hostel in upes
+    - location of girls hostel in upes
+    - location of girls hostel
+    - girls hostel location
+    - girls hostel
+- intent: ask_classrooms
+  examples: |
+    - classrooms in upes
+    - class rooms 
+    - how to visit class rooms in upes
+    - upes classrooms
+    - upes class rooms
+    - i want to see class rooms of upes
+    - class rooms looks like in upes
+    - classrooms
+- intent: ask_dsw
+  examples: |
+    - how to reach student welfare office?
+    - where is student welfare office?
+    - location of student welfare office
+    - how to reach dsw office?
+    - location of dsw office
+    - where is dsw office?
+    - how to reach dsw office
+    - how to reach dean student welfare
+    - where is DSW office
+    - location of dsw office in university
+    - location of dean student welfare office in campus
+    - direct me to dsw office
+    - help me to reach dsw office
+    - dsw location
+    - dsw location on google map
+- intent: ask_electricalstation
+  examples: |
+    - where is electrical sub-station in upes?
+    - location of electrical sub-station
+    - electrical sub-station
+    - electric sub-station
+    - electric station
+    - how to reach to electrical sub-station in upes?
+- intent: ask_firerig
+  examples: |
+    - where is fire rig zone in upes?
+    - how to reach to fire rig zone?
+    - location of fire rig zone
+    - fire rig zone in upes
+    - fire rig zone
+- intent: ask_firetraining
+  examples: |
+    - where is fire training ground in upes?
+    - how to reach to fire training ground in upes?
+    - location of fire training ground
+    - fire training ground
+    - fire training ground location
+- intent: ask_hubble
+  examples: |
+    - how to reach hubble?
+    - how to reach hubble block?
+    - hubble block location
+    - hubble location
+    - location of hubble block in upes
+    - where is hubble in upes?
+    - where is hubble?
+- intent: ask_hubblelift
+  examples: |
+    - lift location in hubble
+    - lift in hubble
+    - is there lift in hubble bock?
+    - where is lift in hubble block?
+    - location of lift in hubble 
+- intent: ask_printer
+  examples: |
+    - where is centralized printer in upes?
+    - location of centralized printer in upes
+    - location of centralized printer
+    - centralized printer facility
+    - printer facility
+    - is there printer available in upes
+- intent: ask_pump
+  examples: |
+    - where is pump location in upes?
+    - pump location 
+    - how to reach pump location?
+    - pump location in upes
+- intent: ask_rainharvesting
+  examples: |
+    - where is rain harvesting in upes?
+    - location of rain harvesting in upes
+    - rain harvesting in upes
+    - rain harvesting points in upes
+    - rain harvesting
+- intent: ask_safetyzone
+  examples: |
+    - is there any safety zone in upes?
+    - safety zone in upes
+    - locations of safety zone in upes
+    - safety zones
+    - where are safety zones in upes?
+    - how to reach safety zones in upes?
+- intent: ask_sewageplant
+  examples: |
+    - is the sewage plant in upes?
+    - sewage treatment plant in upes
+    - sewage plant in upes
+    - sewage plant
+    - where is sewage plant in upes?
+    - how to reach sewage plant in upes?
+    - location of sewage plant
+- intent: ask_solartree
+  examples: |
+    - solar tree location
+    - location of solar tree in upes
+    - where is solar tree in upes?
+    - how to reach to solar tree in upes?
+    - solar tree
+- intent: ask_sportsarena
+  examples: |
+    - sports facility in upes
+    - sports arena in upes
+    - location of sports area
+    - how to reach sports area in upes?
+    - sports ground in upes
+    - sports arena
+    - sports ground
+    - how to reach sports ground?
+    - where is sports arena in upes?
+    - where is sports complex in upes?
+    - how to reach sports area? 
+#- intent: nlu_fallback
+ # examples: |
+ #   - faculty information
+  #  - head of the department
+   # - vice chancellor name
+   # - ankit.kumar@ddn.upes.ac.in
+   # - gym application
+   # - i forget my login credentials
