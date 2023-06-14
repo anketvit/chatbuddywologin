@@ -12,7 +12,7 @@ RUN  rasa train
 VOLUME /app/models
 
 
-CMD [ "run","-m","/app/models","--enable-api","--cors","*","--debug"]
+CMD [ "run","-m","/app/models","--enable-api","--cors","*","--debug", "--port", "5006", "--port", "5007", "--port", "5008"]
 
 
 # Extend the official Rasa SDK image

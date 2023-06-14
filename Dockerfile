@@ -1,18 +1,20 @@
-FROM rasa/rasa-sdk:latest
+# Extend the official Rasa SDK image
+FROM rasa/rasa-sdk:3.6.0a1
 
-USER root
+# Use subdirectory as working directory
 WORKDIR /app
 
-#USER root
+# Copy any additional custom requirements, if necessary (uncomment next line)
+# COPY actions/requirements-actions.txt ./
 
+# Change back to root user to install dependencies
+USER root
+
+# Install extra requirements for actions code, if necessary (uncomment next line)
+# RUN pip install -r requirements-actions.txt
+
+# Copy actions folder to working directory
 COPY ./actions /app/actions
 
-#COPY req.txt /app
-
-#COPY ./database_utils /app/database_utils
-
-#RUN pip3 install -r req.txt
-
-CMD ["start", "--actions", "actions"]
-
+# By best practices, don't run the code with root user
 USER 1001
