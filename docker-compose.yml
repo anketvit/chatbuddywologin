@@ -2,9 +2,9 @@ version: '3.0'
 
 services:
   rasa:
-    image: anketvit/rasa-test:rasa-v35
+    image: anketvit/rasa-test:model-v1
     ports:
-      - "5005:5005"
+      - "5006:5006"
     volumes:
       - ./:/app
     command:
@@ -13,14 +13,16 @@ services:
       - --cors
       - "*"
       - --debug
-    depends_on:
-      - app
-  app:
-    image: anketvit/rasa-test:server-v35
-    volumes:
-      - ./actions:/app/actions
-    ports:
-      - "5055:5055"
+      - "--port"
+      - "5006"
+    #depends_on:
+     # - app
+  #app:
+   # image: anketvit/rasa-test:server-v35
+   # volumes:
+   #   - ./actions:/app/actions
+    #ports:
+     # - "5055:5055"
 
   
   #nginx:
