@@ -4,7 +4,7 @@ services:
   rasa:
     image: anketvit/rasa-test:model-v1
     ports:
-      - "5006:5006"
+      - "5005:5005"
     volumes:
       - ./:/app
     command:
@@ -13,8 +13,6 @@ services:
       - --cors
       - "*"
       - --debug
-      - "--port"
-      - "5006"
     #depends_on:
      # - app
   #app:
