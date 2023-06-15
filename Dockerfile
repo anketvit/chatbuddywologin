@@ -1,20 +1,39 @@
-# Extend the official Rasa SDK image
-FROM rasa/rasa-sdk:3.6.0a1
+FROM rasa/rasa:3.5.7
+#FROM python:3.10.7
 
-# Use subdirectory as working directory
-WORKDIR /app
-
-# Copy any additional custom requirements, if necessary (uncomment next line)
-# COPY actions/requirements-actions.txt ./
-
-# Change back to root user to install dependencies
+#RUN pip3 install rasa
+#RUN pip install sqlalchemy[asyncio]
+WORKDIR  '/app'
+COPY . /app
 USER root
 
-# Install extra requirements for actions code, if necessary (uncomment next line)
-# RUN pip install -r requirements-actions.txt
+RUN  rasa train 
 
+VOLUME /app/models
+
+
+CMD [ "run","-m","/app/models","--enable-api","--cors","*","--debug"]
+
+
+# Extend the official Rasa SDK image
+#1.FROM rasa/rasa-sdk:latest
+
+# Use subdirectory as working directory
+#2.WORKDIR /app
+
+# Copy any additional custom requirements, if necessary (uncomment next line)
+#COPY actions/requirements-actions.txt ./
+
+# Change back to root user to install dependencies
+#3.USER root
+
+# Install extra requirements for actions code, if necessary (uncomment next line)
+#RUN pip install -r requirements-actions.txt
+#RUN pip install --upgrade pip
+#RUN pip3 install sqlite3
 # Copy actions folder to working directory
-COPY ./actions /app/actions
+#5.COPY ./actions /app/actions
 
 # By best practices, don't run the code with root user
-USER 1001
+#6.USER 1001
+
